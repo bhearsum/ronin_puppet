@@ -9,6 +9,9 @@ class pf {
         '10.14': {
             $osx_ver = 'mojave'
         }
+        '10.15': {
+            $osx_ver = 'bigsur'
+        }
         default: {
             fail("OSX ${::macosx_productversion_major} is not supported")
         }
