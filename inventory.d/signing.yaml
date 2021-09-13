@@ -36,7 +36,10 @@ groups:
       - macmini-r8-182.test.releng.mdc1.mozilla.com
     facts:
       puppet_role: mac_v3_signing_mozvpn
-  - name: mac-v3-signing-mozillavpn
+    config:
+      ssh:
+        proxyjump: ssh.mdc1.mozilla.com
+  - name: mac-v3-build
     targets:
       - macmini-r8-179.test.releng.mdc1.mozilla.com
       - macmini-r8-181.test.releng.mdc1.mozilla.com

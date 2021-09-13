@@ -25,5 +25,5 @@ class roles_profiles::roles::mac_v3_signing_mozvpn {
     include ::roles_profiles::profiles::vault_agent
     include ::fw::roles::mac_signing
 
-    #include ::roles_profiles::profiles::mac_v3_signing
+    include ::roles_profiles::profiles::mac_v3_signing
 }
