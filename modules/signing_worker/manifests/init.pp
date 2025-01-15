@@ -170,7 +170,7 @@ define signing_worker (
     vcsrepo { $scriptworker_scripts_clone_dir:
         ensure   => latest,
         provider => git,
-        source   => 'https://github.com/mozilla-releng/scriptworker-scripts',
+        source   => 'https://github.com/bhearsum/scriptworker-scripts',
         revision => $worker_config['scriptworker_scripts_revision'],
         user     => $user,
         group    => $group,
